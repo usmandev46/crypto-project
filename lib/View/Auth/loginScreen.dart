@@ -6,6 +6,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
 
+import '../bottomNavigationScreen.dart';
+
 class CryptoLoginScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -29,7 +31,10 @@ class CryptoLoginScreen extends StatelessWidget {
               SizedBox(height: 1.0.h),
               customLoginTextField(label: 'Password'),
               SizedBox(height: 2.h),
-              customElevatedButtton(label: 'Login', onpress: () {}),
+              customElevatedButtton(label: 'Login', onpress: () {
+
+                Get.offAll(()=>SnakeNavigationBarExampleScreen());
+              }),
               SizedBox(height: 2.h),
               TextButton(onPressed: (){
                 Get.to(()=>CryptoSignUpScreen());
