@@ -46,28 +46,28 @@ class _HomeScreenState extends State<HomeScreen> {
 
   List<Map<String, dynamic>> cryptoMarketPlaceList = [
     {
-      'name': 'Real State',
+      'name': 'Real Estate',
       'image':
-          'https://www.shutterstock.com/image-photo/property-taxes-real-estate-market-260nw-1700575657.jpg',
-      'price': 50000.0,
+          'https://static.vecteezy.com/system/resources/thumbnails/008/124/777/small_2x/real-estate-logo-house-logo-home-logo-sign-symbol-free-vector.jpg',
+      'dis': 'Spacious apartment with stunning views.',
     },
     {
-      'name': 'Ethereum',
+      'name': 'Vehicles',
       'image':
-          'https://img.freepik.com/premium-psd/3d-icon-golden-ethereum-sign_930095-24.jpg',
-      'price': 3000.0,
+          'https://img.freepik.com/free-vector/flat-design-car-dealer-logo_23-2149338507.jpg?w=740&t=st=1705467287~exp=1705467887~hmac=5566899ee2e39841ce461f39b2a334e884409d67778fc57d382ac168522a42a5',
+      'dis': 'Fast and sleek sports car for adrenaline lovers.',
     },
     {
-      'name': 'Litecoin',
+      'name': 'Currency',
       'image':
-          'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/LTC-400.png/800px-LTC-400.png',
-      'price': 150.0,
+          'https://cdn5.vectorstock.com/i/1000x1000/07/34/crypto-currency-logo-icon-vector-19340734.jpg',
+      'dis': 'Cryptocurrency with decentralized blockchain.',
     },
     {
-      'name': 'Ripple',
+      'name': 'Assets',
       'image':
           'https://www.shutterstock.com/image-vector/xrp-ripple-icon-sign-payment-260nw-2079960583.jpg',
-      'price': 1.5,
+      'dis': 'Precious metal bars for investment.',
     }
   ];
 
@@ -85,7 +85,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 padding: const EdgeInsets.all(15),
                 decoration: const BoxDecoration(
                   image: DecorationImage(
-                      image: AssetImage('assets/backgroundImage.jpg'),fit: BoxFit.cover),
+                      image: NetworkImage('assets/backgroundImage.jpg'),fit: BoxFit.cover),
                 ),
                 child: Column(
                   children: [
