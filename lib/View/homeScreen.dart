@@ -85,7 +85,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 padding: const EdgeInsets.all(15),
                 decoration: const BoxDecoration(
                   image: DecorationImage(
-                      image: NetworkImage('assets/backgroundImage.jpg'),fit: BoxFit.cover),
+                      image: AssetImage('assets/backgroundImage.jpg'),fit: BoxFit.cover),
                 ),
                 child: Column(
                   children: [
